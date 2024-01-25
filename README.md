@@ -11,7 +11,7 @@ User profiles are enhanced with details like hobbies, interests, and location, a
 Users can effortlessly add and remove friends, facilitating seamless connection management within the network.
 
 4. **Dynamic Network Visualization:**
-A dynamic visualization tool offers users an interactive view of the network structure, aiding in exploration and analysis.
+A dynamic visualization tool offers users an interactive view of the network structure, aiding exploration and analysis.
 
 5. **Cross-Network Compatibility:**
 Maintain synchronized friend lists across multiple social media networks, ensuring continuity of connections.
@@ -28,3 +28,6 @@ Each user has a private friends list irrespective of the social networks they ar
 # Goal
 * Revolutionize Your Social Experience:
 Let's redefine social networking! Embrace innovation, deepen connections, and create a vibrant community where every interaction counts.
+
+In the next update-
+A simple Flask application to create/delete new users and add/remove friends.
