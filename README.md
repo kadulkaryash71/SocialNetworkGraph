@@ -1,0 +1,1 @@
+A simple simulation of graphs for social media platforms like WhatsApp, or a contact directory
