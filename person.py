@@ -4,7 +4,7 @@ class Person:
     instances = []  # an array to save all the instances to memory
     
     def __init__(self, user_id, name, age, year, institute, designation):
-        self.id = user_id
+        self.user_id = user_id
         self.name = name
         self.age = age
         self.year = year
@@ -15,20 +15,20 @@ class Person:
 
     # creating linkage of users in the given Network based on their User IDs
     def add_friend(self, Person, Network):
-        self._friends.add(Person.id)
-        Network.add_node(self.id, Person.id)
+        self._friends.add(Person.user_id)
+        Network.add_node(self.user_id, Person.user_id)
         return f"{Person.name} was added to your friend list!"
     
     # remove linkage between the requesting user and requested user in the Network
     def remove_friend(self, Person, Network):
-        self._friends.remove(Person.id)
-        Network.remove_node(self.id, Person.id)
+        self._friends.remove(Person.user_id)
+        Network.remove_node(self.user_id, Person.user_id)
         return f"Friend {Person.name} removed."
     
     # checks if the requesting user if friends with the requested user
     # the function can be useful when users are searching for people in their own friends list (friends list of others is supposedly private)
     def friend_check(self, Person):
-        return f"{Person.name} is {self.name}'s friend" if Person.name in self._friends else f"{Person.name} not found."
+        return f"{Person.name} is {self.name}'s friend" if Person.user_id in self._friends else f"{Person.name} not found."
 
     def get_friends(self):
         return self._friends

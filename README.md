@@ -30,5 +30,5 @@ Each user has a private friends list irrespective of the social networks they ar
 Let's redefine social networking! Embrace innovation, deepen connections, and create a vibrant community where every interaction counts.
 
 In the next update-
-* Integration of a database to save user data (Graph or Relational)
-* Integration of Flask application.
+* Integration of a database to save user data (Graph or Relational) -> Moving to another repository which uses Neo4j
+* Integration of Flask application -> -> Moving to another repository which uses Neo4j
