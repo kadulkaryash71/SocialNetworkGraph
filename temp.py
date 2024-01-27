@@ -1,3 +1,7 @@
-d = {1: 2, 4: 2, 2: 6}
+import pickle
+from get_network import create_graph
 
-print(d)
+state_file = open('serialized/obj_1.pkl', 'rb')
+nw_state = pickle.load(state_file)
+
+nw_state.show_network()

@@ -1,12 +1,13 @@
 from network import Network
 from person import Person
+import pickle
 
 facebook = Network("Facebook")
 
-jack = Person("Jack Bauer", 22, "Grade 12", "Dublin City University", "Research Assistant")
-skylar = Person("Skylar Gray", 25, "Second Year", "Trinity College Dublin", "Professor")
-leslie = Person("Leslie White", 24, "First Year", "Massachusettes Institute of Technology", "Student")
-brock = Person("Brock Monagha", 28, "Graduate", "Dublin City University", "Alumni")
+jack = Person("jb500", "Jack Bauer", 22, "Grade 12", "Dublin City University", "Research Assistant")
+skylar = Person("skylarg_10", "Skylar Gray", 25, "Second Year", "Trinity College Dublin", "Professor")
+leslie = Person("lesliewhite_", "Leslie White", 24, "First Year", "Massachusettes Institute of Technology", "Student")
+brock = Person("bmonaghan", "Brock Monaghan", 28, "Graduate", "Dublin City University", "Alumni")
 
 print(jack)
 print(facebook)
@@ -41,3 +42,8 @@ print(jack.friend_check(skylar))
 
 # TEST: SHOW NETWORK
 facebook.show_network()
+
+# TEST: SERIALIZATION
+with open(f'serialized/obj_1.pkl', 'wb') as f:
+    pickle.dump(facebook, f)
+    f.close()
