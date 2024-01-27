@@ -30,4 +30,5 @@ Each user has a private friends list irrespective of the social networks they ar
 Let's redefine social networking! Embrace innovation, deepen connections, and create a vibrant community where every interaction counts.
 
 In the next update-
-A simple Flask application to create/delete new users and add/remove friends.
+* Integration of a database to save user data (Graph or Relational)
+* Integration of Flask application.
